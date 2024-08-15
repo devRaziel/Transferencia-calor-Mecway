@@ -1,0 +1,1400 @@
+﻿<liml version="24">
+  <analysis type="T31" />
+  <timesteps timeperiod="1000 min" stepsize="10 min" />
+  <node nid="1" x="0" y="0" z="0" />
+  <node nid="2" x="0.203" y="0" z="0" />
+  <node nid="3" x="0.203" y="0.102" z="0" />
+  <node nid="4" x="0" y="0.102" z="0" />
+  <node nid="5" x="0" y="0.102" z="-0.057" />
+  <node nid="6" x="0" y="0" z="-0.057" />
+  <node nid="7" x="0.203" y="0" z="-0.057" />
+  <node nid="8" x="0.203" y="0.102" z="-0.057" />
+  <elset name="Default" colorrgb="DADADA" expanded="true" material="Material">
+    <elem eid="1" shape="hex8" nodes="4 3 2 1 5 8 7 6" />
+  </elset>
+  <convectionbc selection="convection_faces">
+    <ambienttemp>5 °C</ambienttemp>
+    <coefficient>5 W/m²/K</coefficient>
+  </convectionbc>
+  <initialconditions>
+    <temperature2 selection="temperature_elements">
+      <value>1100 °C</value>
+      <starttime>0 s</starttime>
+      <endtime>0 s</endtime>
+    </temperature2>
+  </initialconditions>
+  <mat name="Material">
+    <mechanical type="Isotropic" />
+    <density type="Simple" density="1920 kg/m³" />
+    <thermal type="Isotropic" thermalconductivity="0.9 W/m/K" specificheat="790 J/kg/K" />
+  </mat>
+  <elementselection name="temperature_elements" direct="true">
+    <element eid="1" />
+  </elementselection>
+  <faceselection name="convection_faces" direct="true">
+    <face eid="1" faceid="3" />
+    <face eid="1" faceid="1" />
+    <face eid="1" faceid="6" />
+    <face eid="1" faceid="4" />
+    <face eid="1" faceid="5" />
+    <face eid="1" faceid="2" />
+  </faceselection>
+  <fieldvariable name="temperature" displayunit="°C" />
+  <solution>
+    <analysis type="T31" />
+    <timesteps timeperiod="1000 min" stepsize="10 min" />
+    <node nid="1" x="0" y="0" z="0" />
+    <node nid="2" x="0.203" y="0" z="0" />
+    <node nid="3" x="0.203" y="0.102" z="0" />
+    <node nid="4" x="0" y="0.102" z="0" />
+    <node nid="5" x="0" y="0.102" z="-0.057" />
+    <node nid="6" x="0" y="0" z="-0.057" />
+    <node nid="7" x="0.203" y="0" z="-0.057" />
+    <node nid="8" x="0.203" y="0.102" z="-0.057" />
+    <elset name="Default" colorrgb="DADADA" expanded="true" material="Material">
+      <elem eid="1" shape="hex8" nodes="4 3 2 1 5 8 7 6" />
+    </elset>
+    <convectionbc selection="convection_faces">
+      <ambienttemp>5 °C</ambienttemp>
+      <coefficient>5 W/m²/K</coefficient>
+    </convectionbc>
+    <initialconditions>
+      <temperature2 selection="temperature_elements">
+        <value>1100 °C</value>
+        <starttime>0 s</starttime>
+        <endtime>0 s</endtime>
+      </temperature2>
+    </initialconditions>
+    <mat name="Material">
+      <mechanical type="Isotropic" />
+      <density type="Simple" density="1920 kg/m³" />
+      <thermal type="Isotropic" thermalconductivity="0.9 W/m/K" specificheat="790 J/kg/K" />
+    </mat>
+    <elementselection name="temperature_elements" direct="true">
+      <element eid="1" />
+    </elementselection>
+    <faceselection name="convection_faces" direct="true">
+      <face eid="1" faceid="3" />
+      <face eid="1" faceid="1" />
+      <face eid="1" faceid="6" />
+      <face eid="1" faceid="4" />
+      <face eid="1" faceid="5" />
+      <face eid="1" faceid="2" />
+    </faceselection>
+    <results>
+      <timestep id="0" time="0 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="1373.15" min="1373.15" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QJV0mZmZmZpAlXSZmZmZmkCVdJmZmZmaQJV0mZmZmZpAlXSZmZmZmkCVdJmZmZma
+QJV0mZmZmZpAlXSZmZmZmg==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="1" time="10 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="1241.74407088831" min="1241.74407088831" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QJNm+e24DMJAk2b57bgMv0CTZvntuAy8QJNm+e24DMBAk2b57bgMvECTZvntuAy7
+QJNm+e24DL5Ak2b57bgMwQ==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="2" time="20 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="1126.10756479553" min="1126.10756479552" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QJGYbiV3O/NAkZhuJXc76kCRmG4ldzvtQJGYbiV3O+tAkZhuJXc78ECRmG4ldzvu
+QJGYbiV3O+xAkZhuJXc78w==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="3" time="30 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="1024.34806557247" min="1024.34806557247" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QJABZGtNKoZAkAFka00qf0CQAWRrTSqIQJABZGtNKnxAkAFka00qh0CQAWRrTSqD
+QJABZGtNKoJAkAFka00qfw==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="4" time="40 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="934.800257254757" min="934.800257254755" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QI02Zu1GjIpAjTZm7UaMd0CNNmbtRoyEQI02Zu1GjHpAjTZm7UaMhECNNmbtRox+
+QI02Zu1GjH5AjTZm7UaMhA==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="5" time="50 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="855.998670810927" min="855.998670810925" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QIq//UcfQzdAir/9Rx9DJkCKv/1HH0MyQIq//UcfQy1Air/9Rx9DMkCKv/1HH0Mu
+QIq//UcfQzNAir/9Rx9DMA==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="6" time="60 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="786.653701428401" min="786.653701428399" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QIiVOsfQgqRAiJU6x9CCmUCIlTrH0IKaQIiVOsfQgphAiJU6x9CCnECIlTrH0IKc
+QIiVOsfQgpdAiJU6x9CCoA==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="7" time="70 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="725.630503854945" min="725.630503854944" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QIatC0Wa5/BAhq0LRZrn5ECGrQtFmufqQIatC0Wa5+VAhq0LRZrn5kCGrQtFmufs
+QIatC0Wa5+hAhq0LRZrn5w==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="8" time="80 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="671.930420413459" min="671.930420413458" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QIT/cYBB+rJAhP9xgEH6qECE/3GAQfqqQIT/cYBB+qlAhP9xgEH6qECE/3GAQfqv
+QIT/cYBB+qlAhP9xgEH6sA==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="9" time="90 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="624.674637755538" min="624.674637755537" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QIOFZah6xXBAg4VlqHrFbkCDhWWoesVqQIOFZah6xW9Ag4VlqHrFaUCDhWWoesV0
+QIOFZah6xWtAg4VlqHrFdQ==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="10" time="100 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="583.089804893109" min="583.089804893108" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QII4t+ugt2dAgji366C3YECCOLfroLdeQII4t+ugt2FAgji366C3X0CCOLfroLdk
+QII4t+ugt2BAgji366C3ZQ==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="11" time="110 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="546.495377144144" min="546.495377144143" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QIET9ohKykFAgRP2iErKPkCBE/aISso9QIET9ohKyj9AgRP2iErKOkCBE/aISspE
+QIET9ohKyjpAgRP2iErKQw==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="12" time="120 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="514.29247887341" min="514.292478873409" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QIASVv8p4IRAgBJW/yngfkCAElb/KeB9QIASVv8p4IJAgBJW/yngfkCAElb/KeCF
+QIASVv8p4IBAgBJW/ynghA==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="13" time="130 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="485.954102764644" min="485.954102764643" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QH5fRAFCsqxAfl9EAUKypUB+X0QBQrKhQH5fRAFCsqhAfl9EAUKyokB+X0QBQrKq
+QH5fRAFCsqJAfl9EAUKyrg==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="14" time="140 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="461.016485233128" min="461.016485233127" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHzQQ4YFEmRAfNBDhgUSaEB80EOGBRJdQHzQQ4YFEmlAfNBDhgUSYEB80EOGBRJu
+QHzQQ4YFEmBAfNBDhgUSZg==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="15" time="150 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="439.071516835458" min="439.071516835457" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHtxJO7WVntAe3Ek7tZWbkB7cSTu1lZwQHtxJO7WVmxAe3Ek7tZWeUB7cSTu1lZv
+QHtxJO7WVnRAe3Ek7tZWbQ==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="16" time="160 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="419.760063471233" min="419.760063471232" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHo8KThQfUBAejwpOFB9P0B6PCk4UH02QHo8KThQfUVAejwpOFB9O0B6PCk4UH1F
+QHo8KThQfTtAejwpOFB9QQ==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="17" time="170 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="402.766089076709" min="402.766089076709" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHksQeaepKRAeSxB5p6kmkB5LEHmnqSaQHksQeaepJ5AeSxB5p6kn0B5LEHmnqSf
+QHksQeaepJxAeSxB5p6kmQ==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="18" time="180 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="387.811483627038" min="387.811483627037" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHg8+9ZBdeJAeDz71kF10kB4PPvWQXXVQHg8+9ZBddhAeDz71kF12kB4PPvWQXXa
+QHg8+9ZBdddAeDz71kF12Q==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="19" time="190 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="374.651511806237" min="374.651511806235" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHdqbJeky+pAd2psl6TL00B3amyXpMvhQHdqbJeky9tAd2psl6TL50B3amyXpMva
+QHdqbJeky+NAd2psl6TL1A==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="20" time="200 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="363.070807861413" min="363.070807861412" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHaxIgdskRZAdrEiB2yREkB2sSIHbJESQHaxIgdskRhAdrEiB2yRFEB2sSIHbJEc
+QHaxIgdskQ5AdrEiB2yRFw==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="21" time="210 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="352.879851096167" min="352.879851096166" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHYOE96+NjRAdg4T3r42JEB2DhPevjYqQHYOE96+NitAdg4T3r42LEB2DhPevjYv
+QHYOE96+NiRAdg4T3r42Lg==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="22" time="220 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="343.911864323866" min="343.911864323865" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHV+lv8LljxAdX6W/wuWOUB1fpb/C5YzQHV+lv8LlkRAdX6W/wuWOEB1fpb/C5Y/
+QHV+lv8LljZAdX6W/wuWQA==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="23" time="230 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="336.020084523322" min="336.020084523322" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHUAUkQmLTRAdQBSRCYtLEB1AFJEJi0oQHUAUkQmLTBAdQBSRCYtLkB1AFJEJi0s
+QHUAUkQmLS5AdQBSRCYtMA==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="24" time="240 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="329.075361030574" min="329.075361030573" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHSRNK3Em1ZAdJE0rcSbSkB0kTStxJtQQHSRNK3Em05AdJE0rcSbUUB0kTStxJtR
+QHSRNK3Em1NAdJE0rcSbTw==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="25" time="250 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="322.964041960646" min="322.964041960646" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHQvbLdDTyRAdC9st0NPIUB0L2y3Q08hQHQvbLdDTyNAdC9st0NPHkB0L2y3Q08r
+QHQvbLdDTyBAdC9st0NPJA==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="26" time="260 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="317.586114270154" min="317.586114270153" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHPZYLlbYHpAc9lguVtgdkBz2WC5W2ByQHPZYLlbYHJAc9lguVtgdkBz2WC5W2B7
+QHPZYLlbYHFAc9lguVtgeQ==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="27" time="270 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="312.853567022461" min="312.85356702246" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHONqDXk5ppAc42oNeTmikBzjag15OaSQHONqDXk5otAc42oNeTmkkBzjag15OaQ
+QHONqDXk5pBAc42oNeTmjg==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="28" time="280 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="308.688951069879" min="308.688951069879" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHNLBfGOmtBAc0sF8Y6axkBzSwXxjprIQHNLBfGOms1Ac0sF8Y6aykBzSwXxjprM
+QHNLBfGOmsxAc0sF8Y6ayg==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="29" time="290 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="305.024111581812" min="305.024111581811" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHMQYsLTdWNAcxBiwtN1U0BzEGLC03VcQHMQYsLTdVpAcxBiwtN1XUBzEGLC03Vg
+QHMQYsLTdVtAcxBiwtN1Xw==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="30" time="300 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="301.79907267637" min="301.799072676369" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHLcyQBuQidActzJAG5CG0By3MkAbkIgQHLcyQBuQiFActzJAG5CI0By3MkAbkIo
+QHLcyQBuQh1ActzJAG5CHw==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="31" time="310 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="298.961055902244" min="298.961055902243" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHKvYHwnXDhAcq9gfCdcKEByr2B8J1wtQHKvYHwnXC5Acq9gfCdcMEByr2B8J1wu
+QHKvYHwnXCtAcq9gfCdcLQ==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="32" time="320 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="296.463616508061" min="296.46361650806" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHKHavkkwB1Acodq+STAFEByh2r5JMAYQHKHavkkwBtAcodq+STAG0Byh2r5JMAc
+QHKHavkkwBZAcodq+STAFw==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="33" time="330 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="294.265883364101" min="294.265883364099" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHJkQQ7qFcxAcmRBDuoVuEByZEEO6hXCQHJkQQ7qFb9AcmRBDuoVxUByZEEO6hXA
+QHJkQQ7qFcBAcmRBDuoVvg==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="34" time="340 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="292.331890097511" min="292.33189009751" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHJFT2v9qs5AckVPa/2qy0ByRU9r/arHQHJFT2v9qsxAckVPa/2qzEByRU9r/arJ
+QHJFT2v9qsZAckVPa/2qzA==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="35" time="350 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="290.629986494933" min="290.629986494932" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHIqFGy4CoRAcioUbLgKekByKhRsuAp6QHIqFGy4CoBAcioUbLgKfUByKhRsuAqD
+QHIqFGy4CnZAcioUbLgKgw==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="36" time="360 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="289.132320539985" min="289.132320539984" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHISHfwkfS5AchId/CR9HEByEh38JH0oQHISHfwkfSRAchId/CR9KUByEh38JH0m
+QHISHfwkfSZAchId/CR9Iw==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="37" time="370 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="287.814382609063" min="287.814382609062" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHH9B7YPBbpAcf0Htg8FqEBx/Qe2DwWwQHH9B7YPBbFAcf0Htg8FskBx/Qe2DwW2
+QHH9B7YPBa9Acf0Htg8Fsw==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="38" time="380 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="286.654604366109" min="286.654604366108" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHHqeUJthBpAcep5Qm2EFUBx6nlCbYQSQHHqeUJthBdAcep5Qm2EGEBx6nlCbYQX
+QHHqeUJthBFAcep5Qm2EFw==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="39" time="390 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="285.634005792177" min="285.634005792176" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHHaJONB7fVAcdok40Ht80Bx2iTjQe3uQHHaJONB7fJAcdok40Ht9EBx2iTjQe33
+QHHaJONB7exAcdok40Ht9A==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="40" time="400 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="284.735884573365" min="284.735884573365" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHHLxi7nA8VAccvGLucDvEBxy8Yu5wO8QHHLxi7nA75AccvGLucDwkBxy8Yu5wPA
+QHHLxi7nA71AccvGLucDvQ==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="41" time="410 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="283.945542763881" min="283.94554276388" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHG/IPFy/WpAcb8g8XL9X0BxvyDxcv1hQHG/IPFy/WdAcb8g8XL9aEBxvyDxcv1n
+QHG/IPFy/WVAcb8g8XL9YA==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="42" time="420 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="283.25004625101" min="283.250046251009" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHG0ADB/aSpAcbQAMH9pJUBxtAAwf2kgQHG0ADB/aSpAcbQAMH9pKUBxtAAwf2ks
+QHG0ADB/aSRAcbQAMH9pJQ==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="43" time="430 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="282.638013085597" min="282.638013085597" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHGqNU01kPpAcao1TTWQ6kBxqjVNNZDtQHGqNU01kO9Acao1TTWQ90BxqjVNNZDv
+QHGqNU01kPBAcao1TTWQ7A==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="44" time="440 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="282.099427214019" min="282.099427214018" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHGhl0D9iLBAcaGXQP2IqUBxoZdA/YipQHGhl0D9iKxAcaGXQP2Ir0BxoZdA/Yis
+QHGhl0D9iKpAcaGXQP2IqA==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="45" time="450 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="281.625474563318" min="281.625474563318" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHGaAfGdnuRAcZoB8Z2e4UBxmgHxnZ7hQHGaAfGdnuRAcZoB8Z2e4kBxmgHxnZ7m
+QHGaAfGdnt5AcZoB8Z2e5Q==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="46" time="460 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="281.20839879702" min="281.208398797019" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHGTVZn6G5lAcZNVmfobkEBxk1WZ+huYQHGTVZn6G5RAcZNVmfobmEBxk1WZ+huX
+QHGTVZn6G5RAcZNVmfoblA==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="47" time="470 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="280.841374381023" min="280.841374381022" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHGNdkT7ovZAcY12RPui8UBxjXZE+6LzQHGNdkT7ovRAcY12RPui9kBxjXZE+6Ly
+QHGNdkT7ovNAcY12RPui9Q==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="48" time="480 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="280.518394882278" min="280.518394882278" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHGIS1hunMJAcYhLWG6cu0BxiEtYbpy/QHGIS1hunL5AcYhLWG6cw0BxiEtYbpy7
+QHGIS1hunL9AcYhLWG6cuw==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="49" time="490 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="280.234174672224" min="280.234174672224" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHGDvy3w7BBAcYO/LfDsBkBxg78t8OwIQHGDvy3w7AlAcYO/LfDsDUBxg78t8OwG
+QHGDvy3w7AtAcYO/LfDsDg==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="50" time="500 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="279.984062426348" min="279.984062426347" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHF/vrg+JidAcX++uD4mJkBxf764PiYiQHF/vrg+JihAcX++uD4mIkBxf764PiYu
+QHF/vrg+JiJAcX++uD4mLA==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="51" time="510 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="279.763965004263" min="279.763965004262" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHF8OTNeSY1AcXw5M15JhkBxfDkzXkmHQHF8OTNeSYVAcXw5M15JiEBxfDkzXkmK
+QHF8OTNeSYVAcXw5M15JiQ==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="52" time="520 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="279.570280464593" min="279.570280464592" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHF5H95oj5FAcXkf3miPhEBxeR/eaI+KQHF5H95oj4dAcXkf3miPikBxeR/eaI+M
+QHF5H95oj4tAcXkf3miPiw==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="53" time="530 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="279.399839118429" min="279.399839118429" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHF2Zb20FQRAcXZlvbQVAUBxdmW9tBT+QHF2Zb20FQdAcXZlvbQVAEBxdmW9tBUF
+QHF2Zb20FQBAcXZlvbQVBQ==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="54" time="540 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="279.249851656696" min="279.249851656696" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFz/2RzZctAcXP/ZHNlxEBxc/9kc2XEQHFz/2RzZclAcXP/ZHNlyUBxc/9kc2XE
+QHFz/2RzZcpAcXP/ZHNlxw==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="55" time="550 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="279.117863502511" min="279.11786350251" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFx4sTXCspAcXHixNcKzEBxceLE1wrGQHFx4sTXCtBAcXHixNcKyEBxceLE1wrS
+QHFx4sTXCsdAcXHixNcK0A==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="56" time="560 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="279.001714641506" min="279.001714641505" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFwBwXukxJAcXAHBe6TA0BxcAcF7pMHQHFwBwXukwZAcXAHBe6TCkBxcAcF7pML
+QHFwBwXukwtAcXAHBe6TBw==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="57" time="570 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.899504272734" min="278.899504272733" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFuZF6XoBNAcW5kXpegCUBxbmRel6AMQHFuZF6XoAdAcW5kXpegDkBxbmRel6AM
+QHFuZF6XoAxAcW5kXpegCw==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="58" time="580 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.809559701655" min="278.809559701654" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFs8/TfrEJAcWzz9N+sPEBxbPP036w8QHFs8/TfrDpAcWzz9N+sQUBxbPP036w6
+QHFs8/TfrD1AcWzz9N+sOw==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="59" time="590 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.730408966129" min="278.730408966129" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFrr8FP46VAcWuvwU/jqEBxa6/BT+OkQHFrr8FP46hAcWuvwU/jp0Bxa6/BT+Ol
+QHFrr8FP46RAcWuvwU/jpw==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="60" time="600 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.660756747445" min="278.660756747445" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFqknWqzi5AcWqSdarOMEBxapJ1qs4vQHFqknWqzjBAcWqSdarOL0BxapJ1qs4v
+QHFqknWqzjBAcWqSdarOMQ==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="61" time="610 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.59946317215" min="278.599463172149" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFpl2ax+KVAcWmXZrH4okBxaZdmsfidQHFpl2ax+KNAcWmXZrH4oUBxaZdmsfig
+QHFpl2ax+KNAcWmXZrH4pQ==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="62" time="620 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.545525157777" min="278.545525157777" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFouniWfMhAcWi6eJZ8yEBxaLp4lnzBQHFouniWfMhAcWi6eJZ8x0BxaLp4lnzH
+QHFouniWfMhAcWi6eJZ8yg==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="63" time="630 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.498059997189" min="278.498059997188" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFn+A3CdfFAcWf4DcJ15kBxZ/gNwnXyQHFn+A3CdedAcWf4DcJ170BxZ/gNwnXo
+QHFn+A3CdfBAcWf4DcJ16A==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="64" time="640 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.456290912881" min="278.45629091288" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFnTPezRItAcWdM97NEiEBxZ0z3s0SJQHFnTPezRItAcWdM97NEi0BxZ0z3s0SL
+QHFnTPezRIhAcWdM97NEig==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="65" time="650 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.419534344857" min="278.419534344857" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFmtmmlK11AcWa2aaUrXUBxZrZppStaQHFmtmmlK15AcWa2aaUrXkBxZrZppSti
+QHFmtmmlK1pAcWa2aaUrXw==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="66" time="660 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.387188764023" min="278.387188764023" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFmMezYbbxAcWYx7Nhts0BxZjHs2G20QHFmMezYbbdAcWYx7NhtuUBxZjHs2G22
+QHFmMezYbbdAcWYx7Nhttg==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="67" time="670 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.358724828031" min="278.358724828031" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFlvVY+yoRAcWW9Vj7KekBxZb1WPsp+QHFlvVY+yntAcWW9Vj7KgkBxZb1WPsp6
+QHFlvVY+yoJAcWW9Vj7Kew==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="68" time="680 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.333676718482" min="278.333676718482" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFlVr1mFRZAcWVWvWYVCUBxZVa9ZhUQQHFlVr1mFRBAcWVWvWYVFUBxZVa9ZhUM
+QHFlVr1mFRZAcWVWvWYVCQ==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="69" time="690 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.311634517707" min="278.311634517707" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFk/HR53bxAcWT8dHnds0BxZPx0ed20QHFk/HR53blAcWT8dHndt0BxZPx0ed22
+QHFk/HR53bVAcWT8dHndtw==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="70" time="700 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.292237500378" min="278.292237500377" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFkrQE6rJpAcWStATqskkBxZK0BOqybQHFkrQE6rJJAcWStATqsmkBxZK0BOqyX
+QHFkrQE6rJVAcWStATqslg==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="71" time="710 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.275168230157" min="278.275168230157" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFkZxbNVsRAcWRnFs1WwEBxZGcWzVa+QHFkZxbNVsNAcWRnFs1WvkBxZGcWzVbD
+QHFkZxbNVr5AcWRnFs1WyQ==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="72" time="720 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.260147364788" min="278.260147364788" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFkKZBIfn1AcWQpkEh+dkBxZCmQSH58QHFkKZBIfndAcWQpkEh+eEBxZCmQSH5/
+QHFkKZBIfnZAcWQpkEh+fA==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="73" time="730 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.246929084597" min="278.246929084597" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFj82vpbGZAcWPza+lsZUBxY/Nr6WxoQHFj82vpbGVAcWPza+lsZUBxY/Nr6Wxo
+QHFj82vpbGJAcWPza+lsZg==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="74" time="740 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.235297069602" min="278.235297069602" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFjw8bcLJZAcWPDxtwsi0BxY8PG3CySQHFjw8bcLJBAcWPDxtwsjkBxY8PG3CyQ
+QHFjw8bcLJBAcWPDxtwskg==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="75" time="750 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.225060959391" min="278.22506095939" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFjmdmFQwlAcWOZ2YVDAUBxY5nZhUMEQHFjmdmFQwRAcWOZ2YVDBEBxY5nZhUMF
+QHFjmdmFQwdAcWOZ2YVDBA==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="76" time="760 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.21605323783" min="278.21605323783" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFjdPQ9atBAcWN09D1qzUBxY3T0PWrJQHFjdPQ9asxAcWN09D1qzEBxY3T0PWrS
+QHFjdPQ9aslAcWN09D1qzg==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="77" time="770 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.208126491631" min="278.208126491631" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFjVHxxr8pAcWNUfHGvyUBxY1R8ca/DQHFjVHxxr8tAcWNUfHGvyEBxY1R8ca/Q
+QHFjVHxxr8JAcWNUfHGvzQ==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="78" time="780 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.201150997897" min="278.201150997897" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFjN+ob2GtAcWM36hvYZkBxYzfqG9hkQHFjN+ob2GlAcWM36hvYaUBxYzfqG9hr
+QHFjN+ob2GVAcWM36hvYZw==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="79" time="790 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.195012601182" min="278.195012601181" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFjHsWIhh9AcWMexYiGGEBxYx7FiIYYQHFjHsWIhhtAcWMexYiGHkBxYx7FiIYg
+QHFjHsWIhhlAcWMexYiGHA==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="80" time="800 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.18961084531" min="278.189610845309" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFjCKVhuR5AcWMIpWG5IEBxYwilYbkWQHFjCKVhuSNAcWMIpWG5HkBxYwilYbkl
+QHFjCKVhuRpAcWMIpWG5IA==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="81" time="810 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.184857329391" min="278.18485732939" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFi9Sz1go9AcWL1LPWCiEBxYvUs9YKEQHFi9Sz1goxAcWL1LPWCi0BxYvUs9YKR
+QHFi9Sz1golAcWL1LPWCjA==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="82" time="820 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.180674261122" min="278.180674261121" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFi5Aqxq/VAcWLkCrGr40BxYuQKsavxQHFi5Aqxq+ZAcWLkCrGr9UBxYuQKsavs
+QHFi5Aqxq+5AcWLkCrGr4Q==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="83" time="830 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.176993183695" min="278.176993183694" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFi1PbN+VRAcWLU9s35UEBxYtT2zflMQHFi1PbN+VVAcWLU9s35UUBxYtT2zflX
+QHFi1PbN+UtAcWLU9s35VA==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="84" time="840 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.173753855491" min="278.17375385549" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFix7IfbjJAcWLHsh9uK0BxYseyH24uQHFix7IfbjBAcWLHsh9uLkBxYseyH240
+QHFix7IfbipAcWLHsh9uLg==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="85" time="850 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.170903264212" min="278.170903264211" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFivAUPqR5AcWK8BQ+pD0BxYrwFD6kVQHFivAUPqRZAcWK8BQ+pGUBxYrwFD6kY
+QHFivAUPqRVAcWK8BQ+pFA==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="86" time="860 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.168394759321" min="278.168394759321" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFisb60AaNAcWKxvrQBmUBxYrG+tAGbQHFisb60AaBAcWKxvrQBoEBxYrG+tAGf
+QHFisb60AZ1AcWKxvrQBnQ==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="87" time="870 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.1661872886" min="278.1661872886" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFiqLQAmMhAcWKotACYwEBxYqi0AJjHQHFiqLQAmMNAcWKotACYyUBxYqi0AJjH
+QHFiqLQAmMRAcWKotACYwg==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="88" time="880 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.164244726319" min="278.164244726318" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFioL8UAURAcWKgvxQBQEBxYqC/FAFAQHFioL8UAUFAcWKgvxQBQUBxYqC/FAFE
+QHFioL8UATxAcWKgvxQBQA==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="89" time="890 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.16253528203" min="278.162535282029" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFimb6YjDdAcWKZvpiMJEBxYpm+mIwzQHFimb6YjCtAcWKZvpiMLkBxYpm+mIwx
+QHFimb6YjC9AcWKZvpiMLQ==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="90" time="900 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.161030980311" min="278.16103098031" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFik5U4oUFAcWKTlTihOkBxYpOVOKE7QHFik5U4oTtAcWKTlTihO0BxYpOVOKE/
+QHFik5U4oThAcWKTlTihQA==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="91" time="910 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.159707202944" min="278.159707202944" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFijikj2UhAcWKOKSPZQkBxYo4pI9lBQHFijikj2UNAcWKOKSPZRUBxYo4pI9lG
+QHFijikj2UJAcWKOKSPZRQ==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="92" time="920 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.158542286029" min="278.158542286028" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFiiWOi2HJAcWKJY6LYaEBxYoljothvQHFiiWOi2GtAcWKJY6LYb0BxYoljothp
+QHFiiWOi2HFAcWKJY6LYag==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="93" time="930 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.157517165451" min="278.157517165451" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFihTC4IsBAcWKFMLgiwUBxYoUwuCK/QHFihTC4Ir5AcWKFMLgiwkBxYoUwuCK/
+QHFihTC4Ir5AcWKFMLgiwA==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="94" time="940 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.156615064894" min="278.156615064894" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFigX7MXHhAcWKBfsxcfUBxYoF+zFx6QHFigX7MXHhAcWKBfsxcfUBxYoF+zFx6
+QHFigX7MXHhAcWKBfsxceg==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="95" time="950 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.155821221288" min="278.155821221288" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFifj5kl0hAcWJ+PmSXQ0BxYn4+ZJdEQHFifj5klz9AcWJ+PmSXRUBxYn4+ZJdC
+QHFifj5kl0RAcWJ+PmSXRQ==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="96" time="960 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.155122643213" min="278.155122643213" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFie2Hhd4VAcWJ7YeF3e0BxYnth4XeDQHFie2Hhd4BAcWJ7YeF3gkBxYnth4Xd9
+QHFie2Hhd4ZAcWJ7YeF3gg==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="97" time="970 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.15450789829" min="278.15450789829" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFieN1GIhBAcWJ43UYiEEBxYnjdRiILQHFieN1GIgxAcWJ43UYiEkBxYnjdRiIK
+QHFieN1GIg5AcWJ43UYiDg==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="98" time="980 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.153966926086" min="278.153966926086" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFidqYGA0pAcWJ2pgYDSkBxYnamBgNFQHFidqYGA0lAcWJ2pgYDS0BxYnamBgNE
+QHFidqYGA0hAcWJ2pgYDSg==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="99" time="990 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.153490873476" min="278.153490873476" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFidLLYnQhAcWJ0stidBEBxYnSy2J0DQHFidLLYnQRAcWJ0stidBkBxYnSy2J0E
+QHFidLLYnQNAcWJ0stidBA==
+</values>
+        </nodevariable>
+      </timestep>
+      <timestep id="100" time="1000 min">
+        <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+        <nodevariable name="temperature">
+          <maxandmin>
+            <component name="Default" max="278.153071949757" min="278.153071949756" />
+          </maxandmin>
+          <nodes>AAAAAQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAg=
+</nodes>
+          <values>QHFicvuSokBAcWJy+5KiP0BxYnL7kqI2QHFicvuSokBAcWJy+5KiPEBxYnL7kqJD
+QHFicvuSojhAcWJy+5KiRA==
+</values>
+        </nodevariable>
+      </timestep>
+    </results>
+  </solution>
+</liml>
